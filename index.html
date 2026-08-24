@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Santa Cruz Pet Watch</title>
+
+    <!-- Connects this HTML file to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                🐾 Santa Cruz Pet Watch
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#reports">Pet Reports</a>
+                    </li>
+
+                    <li>
+                        <a href="#report">Report a Pet</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Introduction / Hero Section -->
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Help Bring Lost Pets Home</h1>
+
+            <p>
+                Santa Cruz Pet Watch helps residents of Santa Cruz de la Sierra
+                find lost and found pets in their communities.
+            </p>
+
+            <a href="#report" class="primary-button">
+                Report a Pet
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Filtering Section -->
+    <section class="filters">
+
+        <div class="container">
+
+            <h2>Find a Pet</h2>
+
+            <div class="filter-container">
+
+                <!-- Status Filter -->
+                <div class="filter-group">
+
+                    <label for="status-filter">
+                        Status
+                    </label>
+
+                    <select id="status-filter">
+
+                        <option value="All">
+                            All
+                        </option>
+
+                        <option value="Lost">
+                            Lost
+                        </option>
+
+                        <option value="Found">
+                            Found
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Area Filter -->
+                <div class="filter-group">
+
+                    <label for="area-filter">
+                        Area
+                    </label>
+
+                    <select id="area-filter">
+
+                        <option value="All">
+                            All Areas
+                        </option>
+
+                        <option value="Equipetrol">
+                            Equipetrol
+                        </option>
+
+                        <option value="Urubo">
+                            Urubo
+                        </option>
+
+                        <option value="Sirari">
+                            Sirari
+                        </option>
+
+                        <option value="Plan 3000">
+                            Plan 3000
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pet Reports Section -->
+    <section class="reports" id="reports">
+
+        <div class="container">
+
+            <h2>Pet Reports</h2>
+
+            <!-- JavaScript will generate the pet cards here -->
+            <div id="pet-grid" class="pet-grid"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Report a Pet Section -->
+    <section class="report-section" id="report">
+
+        <div class="container">
+
+            <h2>Report a Pet</h2>
+
+            <p>
+                Help the community by reporting a lost or found pet.
+            </p>
+
+
+            <!-- Report Form -->
+            <form class="report-form">
+
+                <!-- Status -->
+                <div class="form-group">
+
+                    <label for="report-status">
+                        Status
+                    </label>
+
+                    <select
+                        id="report-status"
+                        name="status"
+                        required
+                    >
+
+                        <option value="">
+                            Select a status
+                        </option>
+
+                        <option value="Lost">
+                            Lost
+                        </option>
+
+                        <option value="Found">
+                            Found
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Image URL -->
+                <div class="form-group">
+
+                    <label for="image-url">
+                        Image URL
+                    </label>
+
+                    <input
+                        type="url"
+                        id="image-url"
+                        name="image"
+                        placeholder="https://example.com/pet.jpg"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Area -->
+                <div class="form-group">
+
+                    <label for="report-area">
+                        Area
+                    </label>
+
+                    <input
+                        type="text"
+                        id="report-area"
+                        name="area"
+                        placeholder="Example: Equipetrol"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Contact Information -->
+                <div class="form-group">
+
+                    <label for="contact">
+                        Contact Information
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contact"
+                        name="contact"
+                        placeholder="Phone number or email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Description -->
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        placeholder="Describe the pet..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Santa Cruz Pet Watch | Helping reunite pets with their families.
+        </p>
+
+    </footer>
+
+
+    <!-- Connects this HTML file to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
