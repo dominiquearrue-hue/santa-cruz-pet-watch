@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Santa Cruz Pet Watch</title>
 
-    <!-- Connects this HTML file to our CSS file -->
+    <!-- Conecta este archivo HTML con nuestro archivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header and Navigation -->
+    <!-- Encabezado y navegación -->
     <header>
         <div class="container nav-container">
 
@@ -23,11 +23,11 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#reports">Pet Reports</a>
+                        <a href="#reports">Reportes de mascotas</a>
                     </li>
 
                     <li>
-                        <a href="#report">Report a Pet</a>
+                        <a href="#report">Reportar una mascota</a>
                     </li>
                 </ul>
             </nav>
@@ -36,20 +36,20 @@
     </header>
 
 
-    <!-- Introduction / Hero Section -->
+    <!-- Sección de introducción -->
     <section class="hero">
 
         <div class="container">
 
-            <h1>Help Bring Lost Pets Home</h1>
+            <h1>Ayuda a encontrar mascotas perdidas</h1>
 
             <p>
-                Santa Cruz Pet Watch helps residents of Santa Cruz de la Sierra
-                find lost and found pets in their communities.
+                Santa Cruz Pet Watch ayuda a los residentes de Santa Cruz de la Sierra
+                a encontrar mascotas perdidas y encontradas en sus comunidades.
             </p>
 
             <a href="#report" class="primary-button">
-                Report a Pet
+                Reportar una mascota
             </a>
 
         </div>
@@ -57,34 +57,34 @@
     </section>
 
 
-    <!-- Filtering Section -->
+    <!-- Sección de filtros -->
     <section class="filters">
 
         <div class="container">
 
-            <h2>Find a Pet</h2>
+            <h2>Buscar una mascota</h2>
 
             <div class="filter-container">
 
-                <!-- Status Filter -->
+                <!-- Filtro de estado -->
                 <div class="filter-group">
 
                     <label for="status-filter">
-                        Status
+                        Estado
                     </label>
 
                     <select id="status-filter">
 
                         <option value="All">
-                            All
+                            Todos
                         </option>
 
                         <option value="Lost">
-                            Lost
+                            Perdida
                         </option>
 
                         <option value="Found">
-                            Found
+                            Encontrada
                         </option>
 
                     </select>
@@ -92,17 +92,17 @@
                 </div>
 
 
-                <!-- Area Filter -->
+                <!-- Filtro de zona -->
                 <div class="filter-group">
 
                     <label for="area-filter">
-                        Area
+                        Zona
                     </label>
 
                     <select id="area-filter">
 
                         <option value="All">
-                            All Areas
+                            Todas las zonas
                         </option>
 
                         <option value="Equipetrol">
@@ -110,7 +110,7 @@
                         </option>
 
                         <option value="Urubo">
-                            Urubo
+                            Urubó
                         </option>
 
                         <option value="Sirari">
@@ -132,14 +132,14 @@
     </section>
 
 
-    <!-- Pet Reports Section -->
+    <!-- Sección de reportes de mascotas -->
     <section class="reports" id="reports">
 
         <div class="container">
 
-            <h2>Pet Reports</h2>
+            <h2>Reportes de mascotas</h2>
 
-            <!-- JavaScript will generate the pet cards here -->
+            <!-- JavaScript generará las tarjetas de mascotas aquí -->
             <div id="pet-grid" class="pet-grid"></div>
 
         </div>
@@ -147,26 +147,26 @@
     </section>
 
 
-    <!-- Report a Pet Section -->
+    <!-- Sección para reportar una mascota -->
     <section class="report-section" id="report">
 
         <div class="container">
 
-            <h2>Report a Pet</h2>
+            <h2>Reportar una mascota</h2>
 
             <p>
-                Help the community by reporting a lost or found pet.
+                Ayuda a la comunidad reportando una mascota perdida o encontrada.
             </p>
 
 
-            <!-- Report Form -->
+            <!-- Formulario de reporte -->
             <form class="report-form">
 
-                <!-- Status -->
+                <!-- Estado -->
                 <div class="form-group">
 
                     <label for="report-status">
-                        Status
+                        Estado
                     </label>
 
                     <select
@@ -176,15 +176,15 @@
                     >
 
                         <option value="">
-                            Select a status
+                            Selecciona un estado
                         </option>
 
                         <option value="Lost">
-                            Lost
+                            Perdida
                         </option>
 
                         <option value="Found">
-                            Found
+                            Encontrada
                         </option>
 
                     </select>
@@ -192,83 +192,83 @@
                 </div>
 
 
-                <!-- Image URL -->
+                <!-- URL de imagen -->
                 <div class="form-group">
 
                     <label for="image-url">
-                        Image URL
+                        URL de la imagen
                     </label>
 
                     <input
                         type="url"
                         id="image-url"
                         name="image"
-                        placeholder="https://example.com/pet.jpg"
+                        placeholder="https://ejemplo.com/mascota.jpg"
                         required
                     >
 
                 </div>
 
 
-                <!-- Area -->
+                <!-- Zona -->
                 <div class="form-group">
 
                     <label for="report-area">
-                        Area
+                        Zona
                     </label>
 
                     <input
                         type="text"
                         id="report-area"
                         name="area"
-                        placeholder="Example: Equipetrol"
+                        placeholder="Ejemplo: Equipetrol"
                         required
                     >
 
                 </div>
 
 
-                <!-- Contact Information -->
+                <!-- Información de contacto -->
                 <div class="form-group">
 
                     <label for="contact">
-                        Contact Information
+                        Información de contacto
                     </label>
 
                     <input
                         type="text"
                         id="contact"
                         name="contact"
-                        placeholder="Phone number or email"
+                        placeholder="Número de teléfono o correo electrónico"
                         required
                     >
 
                 </div>
 
 
-                <!-- Description -->
+                <!-- Descripción -->
                 <div class="form-group">
 
                     <label for="description">
-                        Description
+                        Descripción
                     </label>
 
                     <textarea
                         id="description"
                         name="description"
-                        placeholder="Describe the pet..."
+                        placeholder="Describe a la mascota..."
                         required
                     ></textarea>
 
                 </div>
 
 
-                <!-- Submit Button -->
+                <!-- Botón de enviar -->
                 <button
                     type="submit"
                     class="submit-button"
                 >
-                    Submit Report
+                    Enviar reporte
                 </button>
 
             </form>
@@ -278,18 +278,21 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- Pie de página -->
     <footer>
 
         <p>
-            Santa Cruz Pet Watch | Helping reunite pets with their families.
+            Santa Cruz Pet Watch | Ayudando a reunir a las mascotas con sus familias.
         </p>
 
     </footer>
 
 
-    <!-- Connects this HTML file to JavaScript -->
+    <!-- Conecta este archivo HTML con JavaScript -->
     <script src="script.js"></script>
 
 </body>
 </html>
+
+
+    
